@@ -1,0 +1,33 @@
+.arial-1-8em {
+    font-family: Arial, sans-serif;
+    font-size: 1.8em;
+}
+
+.arial-1-5em {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.arial-1-4em {
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+}
+
+/* Alle paragrafen met Times New Roman font en verschillende tekstkleuren */
+.rood {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: red;
+}
+
+.groen {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: green;
+}
+
+.blauw {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: blue;
+}
