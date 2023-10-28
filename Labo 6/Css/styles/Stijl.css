@@ -1,4 +1,5 @@
 ul > li {
+    display:inline-block;
     width:150px;
 }
 ul > li > a {
