@@ -1,0 +1,24 @@
+ul.checklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.checklist li {
+    padding-left: 25px;
+    margin-bottom: 5px;
+    position: relative;
+    line-height: 1;
+}
+ul.checklist li:before {
+    content: "☐";
+    position: absolute;
+    left: 0;
+}
+
+ul.checklist li.checked:before {
+    content: "☑";
+    position: absolute;
+    left: 0;
+}
+
+

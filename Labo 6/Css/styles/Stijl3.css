@@ -1,0 +1,12 @@
+a:before {
+    content: "";
+    width: 15px;
+    height: 10px;
+    background-image: url("icoontje.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+a {
+    padding: 30px;
+}
