@@ -3,6 +3,7 @@ body{
     margin: 0 auto;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    border-style: solid;
 }
 table{
     border-collapse: collapse;
@@ -10,7 +11,8 @@ table{
 }
 h1{
     text-align: center;
-    background-color: #2B2D42;
+    color: rgb(170,170,200);
+    background-color: rgb(35,37,70) ;
     padding: 10px;
     margin-bottom: 0;
     margin-top: 0;
@@ -18,11 +20,22 @@ h1{
 th{
     font-size: 40px;
     padding: 10px;
-    background-color: #0070A8;
+    background-color: rgb(200,190,240)  ;
     margin-top: 0;
     margin-bottom: 0;
+    border: 1px solid black;
 }
 td{
     padding: 5px;
-    border: black ;
+    border: 1px solid black;
+
+}
+td:first-child,td:last-child{
+    background-color:  rgb(255, 220, 220);
+}
+tr > .anderemaand {
+    background-color: rgb(128, 128, 128);
+}
+.vrijedag{
+    background-color: rgb(250,120,120);
 }
