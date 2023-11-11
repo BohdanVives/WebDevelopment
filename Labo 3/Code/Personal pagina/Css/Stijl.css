@@ -47,7 +47,8 @@ a:hover{
 { border-collapse: collapse;
     text-align: left;
     width: 100%; }
-.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif;
+.datagrid {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
     background: #fff;
     overflow: hidden; border: 1px solid #006699;
     -webkit-border-radius: 3px;
