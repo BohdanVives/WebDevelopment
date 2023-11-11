@@ -1,0 +1,46 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body > strong {
+    font-size: 25px;
+    padding: 10px;
+    background-color: aquamarine;
+}
+ ol > li{
+    font-size: 20px;
+}
+.stippeltjesrand{
+    border: 1px dotted black;
+    color: purple;
+}
+strong.stippeltjesrand{
+    font-size: 25px;
+}
+td > img{
+    border: 10px dotted black;
+}
+table {
+    margin-top: 50px;
+      }
+tr > th{
+    font-size: 20px;
+}
+a{
+    color: red;
+
+}
+a:before {
+    content: "";
+    width: 30px;
+    height: 10px;
+    background-image: url("fotos/link.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+a:hover{
+    color: aqua;
+}

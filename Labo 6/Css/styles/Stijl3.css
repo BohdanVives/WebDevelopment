@@ -1,6 +1,6 @@
 a:before {
     content: "";
-    width: 15px;
+    width: 10px;
     height: 10px;
     background-image: url("icoontje.png");
     background-size: contain;
