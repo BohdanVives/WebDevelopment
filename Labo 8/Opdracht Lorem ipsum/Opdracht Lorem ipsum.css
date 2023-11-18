@@ -1,0 +1,12 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: auto;
+}
+div{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+   padding: 10px;
+    border: 1px solid black;
+}
