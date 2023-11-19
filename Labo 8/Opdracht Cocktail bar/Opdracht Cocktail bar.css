@@ -7,17 +7,22 @@ body{
 header{
     text-align: center;
 }
+section,
+footer {
+    padding: 10px;
+    width: 70%;
+    float: left;
+}
 
-body > article{
+body > article {
+    padding: 10px;
     border: 1px solid blue;
     text-align: center;
+    float: right;
     width: 30%;
     box-sizing: border-box;
-    float: right;
 }
-section{
-    width: 70%;
-}
+
 body > article > h1{
     margin-top: 0;
 }
@@ -34,9 +39,10 @@ body > article > h2{
     margin-bottom: -20px;
     content: "";
     height: 50px;
-    width: 450px;
+    width: 470px;
     background-image: url("images/cocktail.gif");
     background-size: contain ;
+    background-position: center;
     background-repeat: repeat-x;
     display: inline-block;
 
@@ -52,7 +58,28 @@ section > article > h1,h2{
 }
 body > footer{
     font-size: 0.6em;
+    text-align: center;
+    position: relative;
 }
 body > article > p > a:hover{
     color: brown;
+    background-color: brown;
+}
+#guarantee{
+    margin: 30px;
+    padding: 20px;
+    color: #444444;
+    background-color: #a7cece;
+    border: 4px dotted white ;
+    position: relative;
+}
+.foto1{
+    content: "";
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url("images/background.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
 }
