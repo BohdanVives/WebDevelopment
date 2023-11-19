@@ -76,7 +76,7 @@ body > article > p > a:hover{
 .foto1{
     content: "";
     width: 50px;
-    height: 50px;
+    height: 60px;
     float: left;
     background-image: url("images/background.gif");
     background-size: contain;
