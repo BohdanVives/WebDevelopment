@@ -39,7 +39,7 @@ body > article > h2{
     margin-bottom: -20px;
     content: "";
     height: 50px;
-    width: 470px;
+    width: 450px;
     background-image: url("images/cocktail.gif");
     background-size: contain ;
     background-position: center;
