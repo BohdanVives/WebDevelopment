@@ -26,6 +26,7 @@ body > article {
 
 body > article > h1{
     margin-top: 0;
+    color: #007e7e;
 }
 body > article > h2{
     color: #007e7e;
