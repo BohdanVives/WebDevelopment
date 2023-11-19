@@ -26,15 +26,12 @@ body > article {
 
 body > article > h1{
     margin-top: 0;
-    color: #007e7e;
+    color: red;
 }
-body > article > h2{
-    color: #007e7e;
-}
-body > article > h1{
+body > section > article > h1{
     font-size: 150%;
 }
-body > article > h2{
+body > section >article > h2{
     font-size: 130%;
 }
 .foto{
