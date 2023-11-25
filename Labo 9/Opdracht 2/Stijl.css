@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    width: 95%;
+}
+body > div:first-child{
+   height: 200px;
+    background-image: url("images/bgsky3.jpg");
+    background-size: 100%;
+    text-align: center;
+    color: darkblue;
+}
+body > div:first-child > p{
+    font-size: 300%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body > div:first-child> p:last-child{
+    margin-top: 30px;
+    font-size: 240%;
+}
+body > div:first-child> img{
+
+    position: absolute;
+    margin-right: 90px;
+    margin-bottom: 60px;
+}

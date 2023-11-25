@@ -1,0 +1,33 @@
+body {
+    font-family:Verdana, Helvetica, Arial, sans-serif ;
+    font-size: 1.25em;
+}
+article{
+    display: inline-block;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+article:nth-child(even) img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+article:nth-child(odd) img {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+article p {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+article:first-child {
+    margin-top: 10px;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
