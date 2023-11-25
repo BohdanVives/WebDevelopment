@@ -1,11 +1,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
     width: 95%;
+    margin: auto;
 }
 body > div:first-child{
-   height: 200px;
+    height: 200px;
     background-image: url("images/bgsky3.jpg");
+    background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
     color: darkblue;
@@ -13,15 +14,103 @@ body > div:first-child{
 body > div:first-child > p{
     font-size: 300%;
     margin-top: 0;
-    margin-bottom: 0;
 }
 body > div:first-child> p:last-child{
     margin-top: 30px;
     font-size: 240%;
 }
 body > div:first-child> img{
-
     position: absolute;
     margin-right: 90px;
     margin-bottom: 60px;
 }
+.section1{
+    width: 25%;
+    box-sizing: border-box;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    float: right;
+    color: #666666;
+    font-size: 90%;
+}
+.section1>p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.section1>h3{
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+}
+.section2{
+    width: 75%;
+    padding-right: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+.introduction{
+    background-color: white;
+    color: black;
+    text-align: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.logo{
+    height: 200px;
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.section2 > div > p >span{
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+.gallery{
+    background-color: #999999;
+}
+.foto{
+    padding: 10px;
+    background-color: white;
+    border: 1px dotted #999999;
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.bottom{
+    padding-left: 120px;
+    background-color: #666666;
+    line-height: 2em;
+    color: white;
+    width: 100%;
+    display: inline-block;
+}
+.blokken1{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+.blokken2{
+    width: 50%;
+    box-sizing: border-box;
+    float: right;
+}
+a:hover{
+    color: red;
+}
+.copyright {
+    text-align: center;
+    background: white;
+    color: black;
+    margin-top: 20px;
+
+}
+
