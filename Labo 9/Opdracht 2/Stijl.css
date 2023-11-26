@@ -86,7 +86,6 @@ body > div:first-child> img{
 
 }
 .bottom{
-    padding-left: 120px;
     background-color: #666666;
     line-height: 2em;
     color: white;
@@ -94,11 +93,13 @@ body > div:first-child> img{
     display: inline-block;
 }
 .blokken1{
+    padding-left: 120px;
     width: 50%;
     box-sizing: border-box;
     float: left;
 }
 .blokken2{
+    padding-left: 120px;
     width: 50%;
     box-sizing: border-box;
     float: right;
