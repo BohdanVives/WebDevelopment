@@ -3,28 +3,31 @@ body{
     width: 95%;
     margin: auto;
 }
-body > div:first-child{
+h1{
     height: 200px;
     background-image: url("images/bgsky3.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
     color: darkblue;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-body > div:first-child > p{
+h1 > p:first-child{
     font-size: 300%;
     margin-top: 0;
+    margin-bottom: 0;
 }
-body > div:first-child> p:last-child{
-    margin-top: 30px;
+h1 > p:last-child{
+    margin-top: 0;
     font-size: 240%;
 }
-body > div:first-child > img{
+h1 > img{
     position: absolute;
     margin-bottom: 60px;
     margin-right: 90px;
-    top: 30px;
-    right: 270px;
+    top: 50px;
+    right: 250px;
 }
 news{
     width: 25%;
@@ -50,11 +53,16 @@ hoofddeel{
     padding-right: 10px;
     float: left;
     box-sizing: border-box;
+    display: inline-block;
 }
-introduction{
+.introduction{
+    display: block;
+    padding: 0;
     text-align: justify;
     background-color: white;
     color: black;
+}
+.text{
     margin-right: 30px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -74,6 +82,7 @@ hoofddeel > div > p >span{
 }
 gallery{
     background-color: #999999;
+    display: block;
 }
 .foto{
     padding: 10px;
@@ -85,7 +94,6 @@ gallery{
     margin-bottom: 20px;
     margin-left: 20px;
     margin-top: 20px;
-
 }
 extrainfo{
     background-color: #666666;
