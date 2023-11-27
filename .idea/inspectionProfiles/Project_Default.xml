@@ -16,7 +16,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="28">
+          <list size="41">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -45,6 +45,19 @@
             <item index="25" class="java.lang.String" itemvalue="head4" />
             <item index="26" class="java.lang.String" itemvalue="tfotos" />
             <item index="27" class="java.lang.String" itemvalue="h1" />
+            <item index="28" class="java.lang.String" itemvalue="news" />
+            <item index="29" class="java.lang.String" itemvalue="Hoofdeel" />
+            <item index="30" class="java.lang.String" itemvalue="hoofddeel" />
+            <item index="31" class="java.lang.String" itemvalue="logo" />
+            <item index="32" class="java.lang.String" itemvalue="introduction" />
+            <item index="33" class="java.lang.String" itemvalue="gallery" />
+            <item index="34" class="java.lang.String" itemvalue="extrainfo" />
+            <item index="35" class="java.lang.String" itemvalue="topics" />
+            <item index="36" class="java.lang.String" itemvalue="topics1" />
+            <item index="37" class="java.lang.String" itemvalue="punten1" />
+            <item index="38" class="java.lang.String" itemvalue="items1" />
+            <item index="39" class="java.lang.String" itemvalue="items2" />
+            <item index="40" class="java.lang.String" itemvalue="bedrijfsnaam" />
           </list>
         </value>
       </option>
