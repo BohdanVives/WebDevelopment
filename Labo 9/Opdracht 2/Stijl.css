@@ -107,12 +107,14 @@ items1{
     width: 50%;
     box-sizing: border-box;
     float: left;
+    display: block;
 }
 items2{
     padding-left: 120px;
     width: 50%;
     box-sizing: border-box;
     float: right;
+    display: block;
 }
 a:hover{
     color: red;
