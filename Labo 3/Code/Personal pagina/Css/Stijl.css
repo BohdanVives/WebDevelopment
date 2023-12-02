@@ -136,6 +136,9 @@ h1{
     body{
         background-color: pink;
         font-size: 15px;
+        width: 95%;
+        margin: auto;
+        text-align: center;
     }
     .maat {
         width: 100px;
