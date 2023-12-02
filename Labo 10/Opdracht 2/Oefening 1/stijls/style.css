@@ -1,0 +1,18 @@
+
+
+body > div > div{
+    font-size: 25px;
+    background: #dbdfe5;
+    margin-bottom: 20px;
+}
+body > div > div > div{
+    width: 100px;
+    height: 100px;
+    background: #abb1b8;
+}
+body > div > div > div:first-child{
+    background-color: red;
+}
+body > div > div > div:last-child{
+    background-color: blue;
+}

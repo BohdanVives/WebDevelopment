@@ -1,0 +1,17 @@
+
+
+body > div > div{
+    font-size: 25px;
+    background: #dbdfe5;
+    margin-bottom: 20px;
+}
+body > div > div > div{
+    width: 100px;
+    height: 100px;
+}
+body > div > div > div:nth-child(even){
+    background-color: purple;
+}
+body > div > div > div:nth-child(odd){
+    background-color: pink;
+}
