@@ -1,19 +1,27 @@
 body{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 0;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
-.change {
+table{
+    width: 80%;
+    margin: auto;
+}
+header{
+    margin-bottom: 10px;
+}
+header {
     font-size: 25px;
     padding: 10px;
-    background-color: aquamarine;
+    color: aquamarine;
 }
- ol > li{
+ol > li{
     font-size: 20px;
 }
 
-table > caption > strong > h2{
+table > caption > h2 {
     background-color: #2B2D42;
     border: 1px dotted black;
     color: purple;
@@ -131,3 +139,50 @@ h1{
 { border-collapse: collapse;
     text-align: left;
     width: 100%; }
+@media  screen and (min-width: 576px) and (max-width: 768px) {
+    body{
+        background-color: pink;
+        font-size: 15px;
+    }
+    .maat {
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media  screen and (min-width: 768px)  and (max-width: 992px) {
+    body{
+        background-color: purple;
+        font-size: 20px;
+    }
+    .maat {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media  screen and (min-width: 992px) {
+    body{
+        background-color: lightgreen;
+        font-size: 25px;
+    }
+    header{
+        color: blue;
+    }
+}
+@media  screen and (min-width: 1140px) {
+    body {
+        background-color: orange;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+    }
+    header{
+        color: red;
+    }
+    .maat {
+        width: 400px;
+        height: 350px;
+    }
+}
