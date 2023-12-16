@@ -1,0 +1,161 @@
+   @media screen and (min-width: 700px){
+
+
+    body {
+        width: 98%;
+        font-family: helvetica, serif;
+        margin: auto;
+        font-size: 1em;
+    }
+
+    body > header {
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px;
+        background: #ddaa00;
+    }
+
+    header > h1 {
+        color: white;
+    }
+
+    body > footer {
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 10px;
+        background-color: #ddaa00;
+    }
+
+    body > header > a:hover {
+        color: #ddaa00;
+    }
+
+    body > footer > a:hover {
+        color: #ddaa00;
+    }
+
+    body > nav {
+        text-align: center;
+        padding: 0 5px;
+        background-color: darkgrey;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body > nav > a {
+        width: 100%;
+        color: #ddaa00;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid black;
+        margin: 5px;
+    }
+
+    body > main {
+        padding: 10px;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section {
+        background-color: white;
+        padding: 10px;
+        margin: 5px;
+        width: 100% ;
+        height: auto;
+    }
+
+    section > a {
+        color: grey;
+        border: 1px solid #333;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    body > main > section > img {
+        padding: 0;
+       align-items: center;
+        display: block;
+        margin: auto;
+    }
+   }
+@media screen and (max-width: 700px ) {
+    body{
+        width: 98%;
+        font-family: helvetica, serif;
+        margin: auto;
+        font-size: 1em;
+    }
+    body > header{
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px;
+        background: #ddaa00;
+    }
+    header > h1{
+        color: white;
+    }
+    body > footer{
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 10px;
+        background-color: #ddaa00;
+    }
+    body > header > a:hover{
+        color: #ddaa00;
+    }
+    body > footer > a:hover{
+        color: #ddaa00;
+    }
+    body > nav{
+        text-align: center;
+        padding:  5px 2px;
+        background-color: darkgrey;
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        height: auto;
+        max-width: 100%;
+    }
+    body > nav > a {
+        width: 100%;
+        color: #ddaa00;
+        background-color: white;
+        border: 1px solid black;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    body > main {
+        padding: 10px;
+        background-color: grey;
+       display: flex;
+        flex-direction: column;
+    }
+    section {
+        background-color: white;
+        padding: 10px;
+        margin: 5px;
+        width: auto ;
+    }
+
+    section > a {
+        color: grey;
+        border: 1px solid #333;
+        padding: 10px;
+        display:flex ;
+
+    }
+
+    body > main > section > img {
+        padding: 0;
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+    }
+}
+
