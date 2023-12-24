@@ -1,0 +1,78 @@
+/** Volgende CSS gaan we ze geven **/
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body{
+    text-align: center;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    width: 95%;
+    margin: auto ;
+}
+header{
+    display: block;
+    border-bottom: 1px solid #ebe8e8 ;
+}
+header > img{
+    height: 50px;
+}
+nav{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(7,auto);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+nav > span{
+    display: flex;
+   justify-content: center;
+}
+
+@media screen and (max-width: 770px) {
+
+    header{
+        display: block;
+        width: 600px;
+        border-bottom: 1px solid #ebe8e8 ;
+    }
+    nav{
+        display: grid;
+        width: 600px;
+        text-align: center;
+        grid-template-columns: repeat(7,auto);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+@media screen and (min-width: 770px) and (max-width: 1000px) {
+    header{
+        display: block;
+        width: 750px;
+        border-bottom: 1px solid #ebe8e8 ;
+    }
+    nav{
+        display: grid;
+        width: 750px;
+        text-align: center;
+        grid-template-columns: repeat(7,auto);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    header{
+        display: block;
+        width: 980px;
+        border-bottom: 1px solid #ebe8e8 ;
+    }
+    nav{
+        display: grid;
+        width: 980px;
+        grid-template-columns: repeat(7,auto);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
