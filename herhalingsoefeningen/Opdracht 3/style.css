@@ -49,9 +49,13 @@ nav > span{
 }
 @media screen and (min-width: 770px) and (max-width: 1000px) {
     header{
+        text-align: center;
         display: block;
         width: 750px;
         border-bottom: 1px solid #ebe8e8 ;
+    }
+    header > img{
+        height: 50px;
     }
     nav{
         display: grid;
@@ -64,6 +68,7 @@ nav > span{
 }
 @media screen and (min-width: 1000px) {
     header{
+        text-align: center;
         display: block;
         width: 980px;
         border-bottom: 1px solid #ebe8e8 ;
