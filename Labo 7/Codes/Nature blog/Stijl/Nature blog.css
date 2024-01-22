@@ -8,6 +8,7 @@ section > header {
     font-size: 40px;
     padding: 30px;
     background-image: url("Foto/Nature.jpg");
+    background-size: 100%;
     color: #EDF2F4;
 }
 nav{
