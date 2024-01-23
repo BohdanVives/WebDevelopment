@@ -26,7 +26,7 @@
         background-color: #ddaa00;
     }
 
-    body > header > a:hover {
+    body > nav > a:hover {
         color: #ddaa00;
     }
 
@@ -84,7 +84,7 @@
    }
 @media screen and (max-width: 700px ) {
     body{
-        width: 98%;
+        width: 95%;
         font-family: helvetica, serif;
         margin: auto;
         font-size: 1em;

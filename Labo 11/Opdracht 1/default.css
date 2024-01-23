@@ -1,4 +1,4 @@
-html, body{
+body{
     margin:0;
     font-family:sans-serif;
 }
@@ -18,7 +18,7 @@ nav{
     margin:10px;
 }
 
-nav a{
+nav > div > a{
     display:block;
     margin:10px;
     padding:10px;
