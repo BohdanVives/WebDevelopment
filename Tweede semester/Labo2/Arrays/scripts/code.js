@@ -12,7 +12,7 @@ function voegNaamToe(nieuweNaam) {
     familie.push(nieuweNaam);
 }
 let nieuweNaam = prompt("Voer een nieuwe naam in:");
-voegNaamToe(familie, nieuweNaam);
+voegNaamToe(nieuweNaam);
 
 console.log("Array na toevoegen van nieuwe naam: " + familie);
 
