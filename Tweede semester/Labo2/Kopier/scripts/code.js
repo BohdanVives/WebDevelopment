@@ -9,6 +9,6 @@ const setup = () => {
     let txtOutput = document.getElementById("txtOutput");
     txtOutput.textContent = tekst;
 
-    
+
 }
 window.addEventListener("load", setup);
