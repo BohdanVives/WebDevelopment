@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Bohdan Shevchenko</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Producten</th>
+        <th>Aantal</th>
+        <th>Prijs (per stuk)</th>
+        <th>BTW</th>
+        <th>Subtotaal</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Product 1</td>
+        <td><label>
+            <input type="number" class="aantal" value="0">
+        </label></td>
+        <td class="prijs">10.00 Eur</td>
+        <td class="btw">6%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+    <tr>
+        <td>Product 2</td>
+        <td><label>
+            <input type="number" class="aantal" value="0">
+        </label></td>
+        <td class="prijs">15.00 Eur</td>
+        <td class="btw">9%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+    <tr>
+        <td>Product 3</td>
+        <td><label>
+            <input type="number" class="aantal" value="0">
+        </label></td>
+        <td class="prijs">21.00 Eur</td>
+        <td class="btw">15%</td>
+        <td class="subtotaal">0.00 Eur</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">Totaal</td>
+        <td id="total">0.00 Eur</td>
+    </tr>
+    <tr>
+        <td colspan="5"><button id="herberekenButton">Herbereken</button></td>
+    </tr>
+    </tfoot>
+</table>
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>

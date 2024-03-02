@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Demonstratie slider</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div>
+        <label for="redRange">Red:</label>
+        <input type="range" id="redRange" min="0" max="255" value="0">
+        <span id="redValue">0</span>
+    </div>
+    <div>
+    <label for="greenRange">Green:</label>
+    <input type="range" id="greenRange" min="0" max="255" value="0">
+    <span id="greenValue">0</span>
+    </div>
+    <div>
+        <label for="blueRange">Blue:</label>
+        <input type="range" id="blueRange" min="0" max="255" value="0">
+        <span id="blueValue">0</span>
+    </div>
+
+<section>
+    <div class="colorDemo" id="colorDemo"></div>
+</section>
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>

@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorpicker</title>
+    <style>
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
+<div>
+    <label for="redRange">Red:</label>
+    <input type="range" id="redRange" min="0" max="255" value="0">
+    <span id="redValue">0</span>
+</div>
+<div>
+    <label for="greenRange">Green:</label>
+    <input type="range" id="greenRange" min="0" max="255" value="0">
+    <span id="greenValue">0</span>
+</div>
+<div>
+    <label for="blueRange">Blue:</label>
+    <input type="range" id="blueRange" min="0" max="255" value="0">
+    <span id="blueValue">0</span>
+</div>
+<div>
+    <div id="colorBox"></div>
+</div>
 
-<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+<script>
+    const redRange = document.getElementById('redRange');
+    const greenRange = document.getElementById('greenRange');
+    const blueRange = document.getElementById('blueRange');
+    const redValue = document.getElementById('redValue');
+    const greenValue = document.getElementById('greenValue');
+    const blueValue = document.getElementById('blueValue');
+    const colorBox = document.getElementById('colorBox');
+
+    function updateColor() {
+        const red = redRange.value;
+        const green = greenRange.value;
+        const blue = blueRange.value;
+        const colorString = `rgb(${red}, ${green}, ${blue})`;
+        colorBox.style.backgroundColor = colorString;
+
+        redValue.textContent = red;
+        greenValue.textContent = green;
+        blueValue.textContent = blue;
+    }
+
+    redRange.addEventListener('input', updateColor);
+    greenRange.addEventListener('input', updateColor);
+    blueRange.addEventListener('input', updateColor);
+
+    // Call updateColor initially to set the initial color
+    updateColor();
+</script>
 </body>
 </html>
