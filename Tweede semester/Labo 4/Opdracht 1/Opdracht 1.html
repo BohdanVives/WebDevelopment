@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Title</title>
+</head>
+<body>
+<section>
+    <div>
+        <label for = "voornaam">First name: </label>
+        <input type="text" id = "voornaam" size="5" maxlength="10"/>
+    </div>
+
+    <div>
+        <label for = "achternaam">Last name: </label>
+        <input type="text" id = "achternaam" size = "5" maxlength="10">
+    </div>
+
+</section>
+
+<div> Which sport do you train?</div>
+<form>
+    <div>
+        <input type="checkbox" id="football" name="train" value="football">
+        <label for="football">Football</label>
+    </div>
+    <div>
+        <input type="checkbox" id="basketball" name="train" value="basketbaal">
+        <label for="basketball">Basketball</label>
+    </div>
+    <div>
+        <input type="checkbox" id="Another one" name="train" value="Another one">
+        <label for="Another one">Another one</label>
+    </div>
+</form>
+<div>What is you gender?</div>
+<form>
+    <div>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Male">Male</label>
+    </div>
+
+    <div>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label>
+    </div>
+</form>
+<label for="movie">Favorite movie:</label>
+<input type="text" id="movie" size="5" maxlength="10">
+
+<div>
+    <label for="quota">Favorite quota:</label>
+    <input type="text" id="quota" size="5" maxlength="10">
+</div>
+<div>
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" size="7">
+</div>
+
+<div>
+    <label for = "food">Favorite food:</label>
+    <select id = "food" name = "food">
+        <option value = "Fish">Fish </option>
+        <option value="Pizza">Pizza</option>
+        <option value="Burger">Burger</option>
+        <option value="Free">Pizza</option>
+    </select>
+</div>
+<div>
+    <label for="button">Bestand kiezen:</label>
+    <input type="file" id="button" name="button">
+    </div>
+<div>
+    <label for = "mail">Email:</label>
+    <input type="email" id="mail" name="mail">
+</div>
+<div>
+    <label for = "site">Favorite site</label>
+    <input type="url" id="site" name="site">
+</div>
+<div>
+    <label for = "nummber">Favorite number between 1-10: </label>
+    <input type="number" id="nummber" name="nummber" min="1" max="10">
+</div>
+<div>
+    <label for = "vol">Favorite number between 11-1000: </label>
+    <input type="range" id="vol" name="vol" min="11" max="1000">
+</div>
+<div>
+    <label for="birthdate">When were you born? :</label>
+    <input type="date" id="birthdate" name="birthdate" size = "5">
+</div>
+<div>
+    <label for  ="code">Belgium zip-postcode reg number</label>
+    <input type="text" id="code" name="code" size="5" maxlength="4">
+</div>
+<div>
+    <label for="search">Search something:</label>
+    <input type="search" id="search" name="search">
+</div>
+<br>
+<div>
+    <label for="color">What is your favorite color?</label>
+    <input type="color" id="color" name="color">
+</div>
+<form action="https://github.com">
+    <input type="submit" value="Submit" size="5">
+</form>
+
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>
