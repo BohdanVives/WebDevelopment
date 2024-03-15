@@ -1,3 +1,12 @@
 form{
     display: inline-block;
 }
+button{
+    margin-top:20px;
+}
+.label{
+    margin-right: 80px;
+}
+body > form > label:first-child{
+    margin-right: 70px;
+}
