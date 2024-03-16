@@ -1,7 +1,7 @@
 const setup = () => {
     document.getElementById("button").addEventListener("click",zoeken)
     const text = "De man van An geeft geen hand aan ambetante verwanten"
-    function zoeken () {
+    const zoeken = () => {
         let resultat = 0;
         let zoekIndex =   text.indexOf("an")
        while(zoekIndex!== -1){

@@ -7,20 +7,31 @@
 </head>
 <body>
 <label for="voornaam">Voornaam:</label>
-<input type="text" id="voornaam" size="5" maxlength="30">
-
+<input type="text" id="voornaam" size="5" autofocus >
+<span id="voornaamerror" class="error"></span>
 <br>
+
 <label for="achternaam">Achternaam:</label>
-<input type="text" size = "5" id="achternaam" maxlength="50">
-
+<input type="text" size = "5" id="achternaam" >
+<span id="achternaamerror" class="error"></span>
 <br>
-<label for="datum">Date:</label>
-<input type="date" id="datum" maxlength="50">
 
+<label for="datum">Date:</label>
+<input type="date" id="datum">
+<span id="datumerror" class="error"></span>
 <br>
 
 <label for="email">Email:</label>
-<input type="text" id="email" name="email">
+<input type="text" id="email" name="email" placeholder="student@vives.be">
+<span class="error" id="emailerror"></span>
+<br>
+
+<label for="aantalKinderen">Aantal kinderen:</label>
+<input type="text" id="aantalKinderen" placeholder="0-99">
+<span id="aantalKinderenError" class="error"></span>
+
+<br>
+<button type="button" id="Valideer">Valideer</button>
 <script src="scripts/code.js"></script>
 </body>
 </html>

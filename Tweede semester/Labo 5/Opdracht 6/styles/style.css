@@ -1,0 +1,13 @@
+.error {
+    color: red;
+}
+.nietgeldig{
+    border: 1px solid red;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input {
+    margin-bottom: 10px;
+}
