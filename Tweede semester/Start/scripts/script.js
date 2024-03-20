@@ -6,15 +6,17 @@ const setup = () => {
         if (ei === "met-een-ei") {
             element.classList.remove("hidden");
             element.id = "img-with-egg";
-            let Kipmetei = `<div class="img-with-egg"></div>`;
-
-            document.body.innerHTML += Kipmetei;
+            element.innerHTML = ""; // Wis inhoud van het element voordat je HTML toevoegt
+            let div = document.createElement("div");
+            div.classList.add("img-with-egg");
+            element.appendChild(div);
         } else if (ei === "zonder-een-ei") {
             element.classList.remove("hidden");
             element.id = "img-hidden";
-            let Kipzonderei = `<div class="img-without-egg"></div>`;
-
-            document.body.innerHTML += Kipzonderei;
+            element.innerHTML = ""; // Wis inhoud van het element voordat je HTML toevoegt
+            let div = document.createElement("div");
+            div.classList.add("img-without-egg");
+            element.appendChild(div);
         } else {
             return null;
         }

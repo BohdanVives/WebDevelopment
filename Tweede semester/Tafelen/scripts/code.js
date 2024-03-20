@@ -38,7 +38,11 @@ const getal = () => {
     document.getElementById("tafels").innerHTML = tafels;
 }
  let tabels = document.getElementById("tafels")
-
+const verwijderAlleChildren = (tabels) => {
+    while (tabels.firstChild) {
+        tabels.removeChild(tabels.firstChild);
+    }
+}
 
 document.getElementById("button").addEventListener("click", getal);
 
