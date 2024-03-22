@@ -1,25 +1,20 @@
 const setup = () => {
     const kip = () => {
-        let ei = document.getElementById("Ei").value;
+        var ei = document.getElementById("Ei");
         let element = document.getElementById("img");
+        ei.addEventListener('change', () => {
+            ei.value;
+            if (ei.value === "met-een-ei") {
+                element.classList.remove("hidden")
+                element.classList = "with-egg";
+            } else if (ei.value === "zonder-een-ei") {
+                element.classList.remove("hidden")
+                element.classList.remove("with-egg")
+            } else {
+                return null;
+            }
+        });
 
-        if (ei === "met-een-ei") {
-            element.classList.remove("hidden");
-            element.id = "img-with-egg";
-            element.innerHTML = ""; // Wis inhoud van het element voordat je HTML toevoegt
-            let div = document.createElement("div");
-            div.classList.add("img-with-egg");
-            element.appendChild(div);
-        } else if (ei === "zonder-een-ei") {
-            element.classList.remove("hidden");
-            element.id = "img-hidden";
-            element.innerHTML = ""; // Wis inhoud van het element voordat je HTML toevoegt
-            let div = document.createElement("div");
-            div.classList.add("img-without-egg");
-            element.appendChild(div);
-        } else {
-            return null;
-        }
     }
 
     const index = document.getElementById("iets");
