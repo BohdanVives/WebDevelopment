@@ -33,7 +33,7 @@ const voegSwatchToe = () => {
 	verwijderen.textContent = "x";
 	let newColor = document.getElementById("newcolor")
 	const weg = () => {
-		newColor.removeChild(nieiweSwatch);
+		nieiweSwatch.remove()
 	};
 
 	verwijderen.addEventListener("click", weg);
