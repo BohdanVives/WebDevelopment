@@ -5,8 +5,6 @@ const setup = () => {
     }
     let foto = document.createElement("img")
     foto.setAttribute("src", "foto/photo_2024-03-22_22-45-55.jpg")
-    foto.width = 200;
-    foto.height = 100;
     document.body.append(foto)
 
 
