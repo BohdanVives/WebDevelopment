@@ -31,18 +31,15 @@ const voegSwatchToe = () => {
 
 	let verwijderen = document.createElement("button");
 	verwijderen.textContent = "x";
-	nieiweSwatch.append(verwijderen);
-
+	let newColor = document.getElementById("newcolor")
 	const weg = () => {
-		swatch.removeChild(nieiweSwatch);
+		newColor.removeChild(nieiweSwatch);
 	};
 
 	verwijderen.addEventListener("click", weg);
 
-	let newColor = document.getElementById("newcolor")
 
-
-	nieiweSwatch.append(verwijderen);
+	nieiweSwatch.append(verwijderen)
 	newColor.append(nieiweSwatch);
 };
 
