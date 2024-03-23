@@ -6,6 +6,7 @@ const initialize = () => {
 	}
 	let button = document.getElementById("button");
 	button.addEventListener("click", voegSwatchToe);
+	update()
 };
 
 const update = () => {
@@ -33,7 +34,7 @@ const voegSwatchToe = () => {
 	verwijderen.textContent = "x";
 	let newColor = document.getElementById("newcolor")
 	const weg = () => {
-		nieiweSwatch.remove()
+		newColor.removeChild(nieiweSwatch)
 	};
 
 	verwijderen.addEventListener("click", weg);
