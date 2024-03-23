@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker with Save Functionality</title>
+    <style>
+        .colorDemo {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        .swatch {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            background-color: white;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        .deleteButton {
+            background-color: transparent;
+            border: none;
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label for="redRange">Red:</label>
+    <input type="range" id="redRange" min="0" max="255" value="0">
+    <span id="redValue">0</span>
+</div>
+<div>
+    <label for="greenRange">Green:</label>
+    <input type="range" id="greenRange" min="0" max="255" value="0">
+    <span id="greenValue">0</span>
+</div>
+<div>
+    <label for="blueRange">Blue:</label>
+    <input type="range" id="blueRange" min="0" max="255" value="0">
+    <span id="blueValue">0</span>
+</div>
+
+<section>
+    <div class="colorDemo" id="colorDemo"></div>
+    <button id="saveButton">Save</button>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const redRange = document.getElementById('redRange');
+        const greenRange = document.getElementById('greenRange');
+        const blueRange = document.getElementById('blueRange');
+        const redValue = document.getElementById('redValue');
+        const greenValue = document.getElementById('greenValue');
+        const blueValue = document.getElementById('blueValue');
+        const colorDemo = document.getElementById('colorDemo');
+        const saveButton = document.getElementById('saveButton');
+
+        saveButton.addEventListener('click', function() {
+            const color = `rgb(${redRange.value}, ${greenRange.value}, ${blueRange.value})`;
+            addSwatch(color);
+        });
+
+        function addSwatch(color) {
+            const swatch = document.createElement('div');
+            swatch.classList.add('swatch');
+            swatch.style.backgroundColor = color;
+
+            const deleteButton = document.createElement('button');
+            deleteButton.classList.add('deleteButton');
+            deleteButton.textContent = 'X';
+            deleteButton.addEventListener('click', function() {
+                swatch.parentNode.removeChild(swatch);
+            });
+
+            swatch.appendChild(deleteButton);
+            colorDemo.appendChild(swatch);
+
+            swatch.addEventListener('click', function() {
+                setColor(color);
+            });
+        }
+
+        function setColor(color) {
+            const colorValues = color.substring(4, color.length - 1).split(', ');
+            redRange.value = colorValues[0];
+            greenRange.value = colorValues[1];
+            blueRange.value = colorValues[2];
+            updateColor();
+        }
+
+        function updateColor() {
+            const red = redRange.value;
+            const green = greenRange.value;
+            const blue = blueRange.value;
+            const colorString = `rgb(${red}, ${green}, ${blue})`;
+            colorDemo.style.backgroundColor = colorString;
+
+            redValue.textContent = red;
+            greenValue.textContent = green;
+            blueValue.textContent = blue;
+        }
+
+        redRange.addEventListener('input', updateColor);
+        greenRange.addEventListener('input', updateColor);
+        blueRange.addEventListener('input', updateColor);
+
+        updateColor();
+    });
+</script>
+</body>
+</html>
