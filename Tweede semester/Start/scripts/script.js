@@ -1,9 +1,9 @@
 const setup = () => {
     const kip = () => {
-        var ei = document.getElementById("Ei");
+        let ei = document.getElementById("Ei");
         let element = document.getElementById("img");
         ei.addEventListener('change', () => {
-            ei.value;
+            console.log(ei.value)
             if (ei.value === "met-een-ei") {
                 element.classList.remove("hidden")
                 element.classList = "with-egg";
