@@ -1,7 +1,7 @@
-const setup = () => {
+
     let count = 0;
     const print = () => {
-        if (count<5) {
+        if (count<10) {
             console.log("hallo");
             count++;
         } else {
@@ -9,6 +9,6 @@ const setup = () => {
         }
     }
     let taskId = setInterval(print, 500);
-}
-window.addEventListener("load", setup);
+
+window.addEventListener("load", print);
 
