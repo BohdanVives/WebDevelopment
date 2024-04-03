@@ -16,26 +16,42 @@ begin.addEventListener("click", () => {
 }
 
 
-const start = () =>{
+const start = () => {
     let button = document.getElementById("button");
-    button.classList = "hidden"
+    button.classList.add("hidden")
+
+    setInterval(verplaats, global.MOVE_DELAY);
+    setInterval(volgendeFoto, global.MOVE_DELAY);
 
     let foto = document.getElementById("foto")
-    let timer = setInterval(volgendeFoto, global.MOVE_DELAY)
-    foto.addEventListener("click", timer);
+    foto.addEventListener("click", tellen)
 }
 
+
 const volgendeFoto = () =>{
-    let fotos = document.getElementById("foto")
+
+    let foto = document.getElementById("foto")
+
     let getal = Math.random() * global.IMAGE_COUNT;
     let score = document.getElementById("aantal")
+
     if (getal <= global.IMAGE_COUNT){
-        let image = global.IMAGE_PATH_PREFIX + getal + global.IMAGE_PATH_SUFFIX;
-        fotos.src = image
-        global.score++
-        score.append(global.score)
+            foto.src = global.IMAGE_PATH_PREFIX + getal + global.IMAGE_PATH_SUFFIX
     } else {
-        console.log("Error")
+        console.log("Eror")
     }
+}
+
+const tellen = ()=> {
+    let score = document.getElementById("aantal")
+    global.score++
+    score.textContent = global.score;
+}
+const verplaats = () => {
+    let field = document.getElementById("playField")
+    let foto = document.getElementById("foto")
+
+    let x = Math.floor(Math.random() * (field.clientWidth - foto.width));
+    let y = Math.floor(Math.random() * (field.clientHeight - foto.height));
 }
 window.addEventListener("load", setup);
