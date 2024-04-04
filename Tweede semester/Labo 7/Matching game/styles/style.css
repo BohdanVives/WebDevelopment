@@ -1,0 +1,21 @@
+#spel{
+    width: 920px;
+    height: 640px;
+    display: block;
+    border: 1px solid black;
+}
+.display{
+    display: inline-block;
+
+}
+.card{
+    height: 170px;
+    width: 200px;
+    margin: 20px 15px;
+}
+.cardafzet{
+    transform: rotateY(180deg);
+}
+.hidden{
+    display: none;
+}
