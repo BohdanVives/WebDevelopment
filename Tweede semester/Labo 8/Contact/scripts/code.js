@@ -1,5 +1,7 @@
+
+
 let global ={
-    waarde: 0
+    option: 0
 }
 let personen = [];
 
@@ -7,8 +9,20 @@ let personen = [];
 // Bewaar de wijzigingen die in de user interface werden aangebracht
 const bewaarBewerktePersoon = () => {
     console.log("Klik op de knop bewaar");
+    let selectElement = document.getElementById("lstPersonen")
 
-    valideer()
+    let selectedIndex = selectElement.selectedIndex
+
+    if(selectedIndex === global.option){
+        selectElement.remove(selectedIndex)
+        personen.splice(selectedIndex,1)
+    }
+
+
+  if (!valideer()){
+      console.error("fgfg")
+      return;
+  }
     // valideer alle input data en controleer of er geen errors meer zijn
 
         let voornaam = document.getElementById("txtVoornaam").value;
@@ -16,8 +30,7 @@ const bewaarBewerktePersoon = () => {
         let geboorteDatum = document.getElementById("txtGeboorteDatum").value;
         let email = document.getElementById("txtEmail").value;
         let aantalKinderen = document.getElementById("txtAantalKinderen").value;
-
-            let personInfo = [voornaam, familienaam, geboorteDatum, email,aantalKinderen, global.waarde]
+            let personInfo = [voornaam, familienaam, geboorteDatum, email,aantalKinderen]
             console.log(personInfo)
 
             personen.push(personInfo)
@@ -49,6 +62,8 @@ const bewerkNieuwePersoon = () => {
     // Zet de user interface klaar om de gegevens van een nieuwe persoon in te voeren
 };
 
+
+
 // onze setup functie die de event listeners registreert
 const setup = () => {
     let btnBewaar = document.getElementById("btnBewaar");
@@ -59,7 +74,7 @@ const setup = () => {
 
     let lstPersonen = document.getElementById("lstPersonen");
     lstPersonen.addEventListener("change", (event) => {
-        let index = event.target.selectedIndex;
+        let index = lstPersonen.selectedIndex;
         console.log(index)
         let persoon = personen[index]
         document.getElementById("txtVoornaam").value = persoon[0];
@@ -67,8 +82,10 @@ const setup = () => {
         document.getElementById("txtGeboorteDatum").value = persoon[2];
         document.getElementById("txtEmail").value = persoon[3];
         document.getElementById("txtAantalKinderen").value = persoon[4];
-
+        global.option = index
+        console.log(global.option)
     })
+
     // voeg een change listener toe aan lstPersonen. Bij het klikken op een option element in de lijst
     // moet de data van die persoon getoond worden in het formulier
 };
