@@ -1,4 +1,5 @@
 const setup = () => {
+    alert('Gelukkige Verjaardag')
     var date = new Date(2005, 0, 1)
     var andereDate = new Date()
 
