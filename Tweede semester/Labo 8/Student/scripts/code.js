@@ -1,4 +1,4 @@
-const setup = () => {µ
+const setup = () => {
     alert('Happy birthday')
     let student = {
         voornaam : "Bohdan",
