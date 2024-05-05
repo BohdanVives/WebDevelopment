@@ -1,0 +1,48 @@
+.card-title {
+    color: #333;
+}
+
+
+.card-text {
+    color: #666;
+}
+
+
+.card-link {
+    color: #007bff;
+}
+.blauw{
+    background-color: lightblue;
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.red{
+    background-color: red;
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.purple{
+    background-color: lightpink;
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.history{
+
+    width: 800px;
+    height: 400px;
+}
